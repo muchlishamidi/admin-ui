@@ -31,7 +31,7 @@ function Exercise() {
           Post Cards
         </h1>
         <div className="grid md:grid-cols-6 lg:grid-cols-6 gap-4 max-w-[90%] mx-auto">
-          {PostData.map((post) => (
+          {getPost.map((post) => (
             <PostCard key={post.id} {...post} />
           ))}
         </div>
