@@ -2,6 +2,7 @@ import React from 'react'
 import LabeledInput from '../Elements/LabeledInput'
 import Button from '../Elements/Button'
 import CheckBox from '../Elements/CheckBox'
+import { Link } from 'react-router-dom'
 
 
 function FormSignUp() {
@@ -37,12 +38,10 @@ function FormSignUp() {
                     name="password"/>
                 </div>
                 <div className="mb-3">
-                <CheckBox
-                    label="Keep me signed in"
-                    id="status"
-                    type="checkbox"
-                    name="status"
-                />
+                    By continuing, you agree to our &nbsp;
+                    <a href='#' className='text-primary text-sm'>
+                        terms of service
+                    </a>
                 </div>
                 <Button>Sign Up</Button>
             </form>
@@ -89,7 +88,13 @@ function FormSignUp() {
             
             {/* sign in with google end */}
             {/* link start */}
-        {/* link end */}
+            <div className='flex justify-center text-sm text-gray-01'>
+                Already have an account? &nbsp;
+                <Link to="/login" className='text-primary text-sm font-bold'>
+                    Sign In Here
+                </Link>
+            </div>
+            {/* link end */}
     </>
   )
 }
