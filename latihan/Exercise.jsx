@@ -6,7 +6,7 @@ import { use } from "react";
 
 function Exercise() {
   const [users, setUsers] = useState([]);
-  
+
   // console.log(getUsers());
 
   useEffect(() => {
