@@ -9,7 +9,7 @@ function CardExpenseBreakdown(props) {
     <>
       <Card
         title="Expenses Breakdown"
-        				desc={
+        desc={
           <div className="h-full md:grid md:grid-cols-3 gap-4">
             {data.map((item) => (
               <div key={item.id} className="flex items-center justify-between">
