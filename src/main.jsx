@@ -6,9 +6,12 @@ import App from "./App.jsx";
 import Exercise from "../latihan/Exercise.jsx";
 import Parent from "./latihan/Parent.jsx";
 import { CounterContextProvider } from "./context/counterContext.jsx";
-
+import { ThemeContextProvider } from "./context/themeContext.jsx";
+ 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <App/>
+    <ThemeContextProvider>
+      <App/>
+    </ThemeContextProvider>
   </React.StrictMode>,
 );
