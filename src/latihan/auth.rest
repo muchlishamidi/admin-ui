@@ -10,3 +10,13 @@ Content-Type: application/json
 ### logout
 POST https://jwt-auth-eight-neon.vercel.app/logout
 Authorization: Bearer REFRESH_TOKEN
+
+###register
+POST https://jwt-auth-eight-neon.vercel.app/register
+Content-Type: application/json
+
+{
+  "name": "john doe",
+  "email": "hello@example.com",
+  "password": "123456"
+}
